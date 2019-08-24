@@ -1,0 +1,86 @@
+/* Mobile */
+@media (min-width: 0px) {
+
+    body {
+        font-family: 'Major Mono Display', monospace;
+        background: #3aafa9;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .app {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .timer {
+        font-family: monospace;
+        font-size: 2.5em;
+        padding: 50px 30px;
+        border-radius: 10px 10px 0 0;
+        background: #2b7a78;
+        color: #feffff;
+        text-align: center;
+        width: 50vw;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        background: #17252a;
+        width: 50vw;
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+
+    }
+
+    button {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 1em;
+        padding: 20px;
+        margin: 10px;
+        width: 80%;
+        border-radius: 5px;
+        background: #def2f1;
+        text-align: center;
+        border: none;
+    }
+
+    button.start:hover:enabled {
+        background: #ABE188;
+        cursor: pointer;
+    }
+
+    button.pause:hover:enabled {
+        background: #FFE066;
+        cursor: pointer;
+    }
+
+    button.reset:hover:enabled {
+        background: #F25F5C;
+        cursor: pointer;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 426px) {
+
+    .buttons {
+        flex-direction: row;
+    }
+
+
+    button {
+        width: 30%;
+        margin: 5px;
+    }
+}
